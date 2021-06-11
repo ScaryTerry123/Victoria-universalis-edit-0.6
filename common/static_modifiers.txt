@@ -173,6 +173,7 @@ bad_debter = {
 }
 
 great_power = {
+	badboy = -0.1
 	prestige = 0.1
 	research_points = 1.5
 	diplomatic_points_modifier = 1.0
@@ -180,6 +181,7 @@ great_power = {
 }
 
 second_power = {
+	badboy = -0.05
 	prestige = 0.05
 	research_points = 1.25
 	diplomatic_points_modifier = 0.25
