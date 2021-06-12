@@ -1213,6 +1213,40 @@ political_decisions = {
 				factor = 0
 				NOT = {
 					badboy = 0.1
+		}
+	}
+
+		annex_canada = {
+		picture = canadian_confederation
+		alert = no
+		potential = {
+			ai = no
+			tag = USA
+			OR = {
+				CAN = {
+					exists = yes
+					vassal_of = THIS
+				}
+				RPL = {
+					exists = yes
+					vassal_of = THIS
+				}
+			}
+			NOT = { has_country_flag = canada_annexed }
+		}
+
+		allow = {
+			NOT = { badboy = 1 }
+		}
+
+		effect = {
+			inherit = CAN
+			inherit = RPL
+			set_country_flag = canada_annexed
+			badboy = 5
+		}
+		ai_will_do = { factor = 0 }
+	}
 				}
 			}
 		}
